@@ -1,10 +1,12 @@
 package com.example.myproject.domain;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix = "com.example.myproject.customer")
+@PropertySource(value = {"classpath:application.properties"})
 public class Customer {
     private String id;
     private String name;
