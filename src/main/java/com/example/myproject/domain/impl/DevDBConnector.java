@@ -4,6 +4,9 @@ import com.example.myproject.domain.DBConnector;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author 34924
+ */
 @Component
 @Profile("devDb")
 public class DevDBConnector implements DBConnector {
